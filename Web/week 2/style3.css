@@ -1,0 +1,130 @@
+.body {
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: black;
+    background: url(back.mp4) no-repeat cover;
+    animation: gradient 10s infinite linear;
+    background-size: 400%;
+
+}
+
+.main-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    color: white;
+}
+
+.header-li {
+    width: 200px;
+    text-align: center;
+}
+
+.header-li:hover {
+    background-color: white;
+    color: black;
+}
+
+.header-li:hover a{
+    color: black;
+}
+
+.header-ul {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+.main {
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.main-button:hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.main-welcome {
+    text-align: center;
+    margin: auto;
+    height: 230px;
+    width: 50%;
+    font-size: 35px;
+}
+
+.main-cats, .main-adil, .main-vlad{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main-cats-text, .main-adil-text, .main-vlad-text{
+    text-align: right;
+    height: 100px;
+    padding: 200px;
+}
+
+.main-adil-images img, .main-vlad-images img{
+    margin-top: 170px;
+}
+
+.footer {
+    height: 80px;
+}
+
+.footer-button, .button {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100px;
+    text-transform: uppercase;
+}
+
+.footer-div {
+    text-align: center;
+}
+
+.footer-button:hover {
+    background-color: white;
+    color: black;
+}
