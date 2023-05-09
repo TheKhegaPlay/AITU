@@ -1,0 +1,123 @@
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   
+   putBeepers2();
+   
+   putBeepers1();
+   
+   putBeepers2();
+   
+   putBeepers1();
+}
+
+function putBeepers1(){
+   ifLeft();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}
+
+function putBeepers2(){
+   ifRight();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+}
+
+function ifRight(){
+   turnLeft();
+   move();
+   turnLeft();
+   
+}
+
+function ifLeft(){
+   turnRight();
+   move();
+   turnRight();
+}
+
+---------------------------------------------------------------------------------------
+
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+ function main(){
+   turnLeft();
+   go();
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   turnRight();
+   go2();
+   turnRight();
+   move();
+   
+   
+   repeat (2) {
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   }
+   
+   turnLeft();
+   go();
+
+   repeat (2) {
+   turnRight();
+   move();
+   turnLeft();
+   move();
+   }
+
+   turnLeft();
+   repeat(2) {
+      move();
+   }
+   
+   turnLeft();
+   go();
+
+   turnRight();
+   go2();
+   
+   
+   turnRight();
+   go();
+   
+   turnLeft();
+   go();
+}
+
+function go() {
+   while(frontIsClear()){
+   move();
+   }   
+}
+
+function go2() {
+   repeat(2){
+   move();
+   }   
+}
